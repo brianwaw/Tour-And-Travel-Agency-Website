@@ -1,9 +1,9 @@
---first things first create a database called katikuDB.
+--first things first create a database user called prog with password netsh.
 
 /*Log in to MariaDB on the target machine:
 
-mysql -u [username] -p
-Enter your MariaDB password.
+mysql -u prog -p
+Enter your MariaDB password. #(which is "netsh")
 Create a New Database:
 
 CREATE DATABASE katikuDB;
@@ -12,7 +12,7 @@ Import the SQL Dump File:
 
 mysql -u prog -p katikuDB < /path/to/this/katikuDB_backup.spl
 
-Enter your MariaDB password.
+Enter your MariaDB password. #(which is "netsh")
 
 */
 
